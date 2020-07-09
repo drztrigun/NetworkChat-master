@@ -17,6 +17,7 @@ public class ServerGUI extends JFrame implements ActionListener, Thread.Uncaught
     private final JButton buttonStop = new JButton("Stop");
 
     public static void main(String[] args) {
+
         //вызываем класс, вызываем единственный метод, передаем туда значение и создаем анонимный класс и реализаем интерфейс
         SwingUtilities.invokeLater(new Runnable() {    //запускаем в отдельном потоке чтобы не загружать другой поток(Runnable)
             @Override   // переписываем метод
@@ -27,6 +28,7 @@ public class ServerGUI extends JFrame implements ActionListener, Thread.Uncaught
     }
 
     ServerGUI(){
+
         //переопределяем исключения
         Thread.setDefaultUncaughtExceptionHandler(this);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

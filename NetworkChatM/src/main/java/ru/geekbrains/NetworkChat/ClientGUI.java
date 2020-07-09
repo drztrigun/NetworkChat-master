@@ -50,7 +50,6 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
 
 
     ClientGUI(){
-
         //переопределяем исключения
         Thread.setDefaultUncaughtExceptionHandler(this);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -88,14 +87,10 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
         // добавляем слушителя по нажатию клавиатуры, переписываем оди метод по отпусканию клавиши Enter
         messageField.addKeyListener(new KeyListener() {
             @Override
-            public void keyTyped(KeyEvent keyEvent) {
-
-            }
+            public void keyTyped(KeyEvent keyEvent) { }
 
             @Override
-            public void keyPressed(KeyEvent keyEvent) {
-
-            }
+            public void keyPressed(KeyEvent keyEvent) { }
 
             @Override
             public void keyReleased(KeyEvent e) {
