@@ -49,7 +49,6 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
         });
     }
 
-
     ClientGUI(){
         //переопределяем исключения
         Thread.setDefaultUncaughtExceptionHandler(this);

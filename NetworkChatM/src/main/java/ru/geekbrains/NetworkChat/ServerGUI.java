@@ -44,7 +44,6 @@ public class ServerGUI extends JFrame implements ActionListener, Thread.Uncaught
         add(buttonStop);
 
         setVisible(true);
-
     }
 
     @Override
