@@ -28,7 +28,6 @@ public class ServerGUI extends JFrame implements ActionListener, Thread.Uncaught
     }
 
     ServerGUI(){
-
         //переопределяем исключения
         Thread.setDefaultUncaughtExceptionHandler(this);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

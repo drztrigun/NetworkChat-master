@@ -14,6 +14,7 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
 
     public FileWriter fr;
     public BufferedWriter bw;
+
     private final JTextArea chatArea = new JTextArea();                             // область сообщений
     private final JPanel panelTop = new JPanel(new GridLayout(2, 3));     // верхняя панель
     private final JTextField ipAddressField = new JTextField("127.0.0.1");          // полея IP адреса
